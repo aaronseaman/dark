@@ -1,0 +1,20 @@
+# Publish: mirror main to gh-pages (GitHub Pages serves gh-pages as a static site).
+name: pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push main to gh-pages
+        run: git push --force origin HEAD:refs/heads/gh-pages

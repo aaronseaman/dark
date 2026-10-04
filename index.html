@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>dark</title>
+<meta name="description" content="A camera that thinks like a scanner. On-device, offline, no account.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0B0C0D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="dark">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<!-- iPhone 17 Pro Max / 16 Pro Max (440x956 @3x) -->
+<link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/splash/splash-1320x2868.png">
+<!-- iPhone 17 Pro / 17 (402x874 @3x) -->
+<link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/splash/splash-1206x2622.png">
+<!-- iPhone Air (420x912 @3x) -->
+<link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/splash/splash-1260x2736.png">
+<link rel="preload" href="assets/fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<div id="app" aria-live="polite"></div>
+<div id="layer-sheets"></div>
+<div id="layer-toast"></div>
+<noscript><p style="padding:24px;font:15px/22px system-ui;color:#E8E6E1">dark needs JavaScript to run.</p></noscript>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
